@@ -1,0 +1,14 @@
+[
+  {
+    "name": "master",
+    "commit": {
+      "sha": "sha2"
+    }
+  },
+  {
+    "name": "dev",
+    "commit": {
+      "sha": "sha3"
+    }
+  }
+]
