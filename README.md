@@ -8,7 +8,7 @@ belonging to a specified user from the Github API.
 
 ## Technologies
 
-Application was created using Java 21 and Spring Boot framework (Spring Web).
+Application was created using Java 21 and Spring Boot 3.2.2 (Spring Web).
 [MockServer](https://www.mock-server.com/), [Mockito](https://site.mockito.org/)
 and JUnit 5 were utilized for unit and integration testing.
 
