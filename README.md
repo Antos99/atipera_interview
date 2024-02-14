@@ -31,7 +31,7 @@ java -jar target/atipera_interview-0.0.1-SNAPSHOT.jar
 
 The application accepts the following HTTP requests:
 ```http
-GET http://{host}:8080/api/v1/github/{username}/repositories
+GET http://host:8080/api/v1/github/username/repositories
 Accept: application/json
 ```
 - *host* - the host address (typically *localhost* for local machine)
@@ -45,17 +45,15 @@ status code 200 and a JSON body in the following format:
 ```json
 [
     {
-        "repositoryName": ${repositoryName},
-        "ownerLogin": ${githubOwnerLogin},
+        "repositoryName": "${repositoryName}",
+        "ownerLogin": "${githubOwnerLogin}",
         "branches": [
             {
-                "name": ${branchName},
-                "lastCommitSha": ${lastCommitSha}
-            },
-            ...
+                "name": "${branchName}",
+                "lastCommitSha": "${lastCommitSha}"
+            }
         ]
-    },
-    ...
+    }
 ]
 ```
 **NOTE:** Response contains only not-fork repositories.
